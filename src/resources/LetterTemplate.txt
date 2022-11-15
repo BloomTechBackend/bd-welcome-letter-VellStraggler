@@ -1,0 +1,9 @@
+Welcome to [company name]!
+
+Dear [fullname],
+
+We are all really excited to welcome you to our team! As agreed, your start date will be [startdate] and
+your starting salary is $[startingsalary].
+We expect to see you in our offices at [company starttime].
+
+We are looking forward to working with you!

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomtech.userCreation.services.UserServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-05-04T16:31:45" hostname="Lambda-School-Jamies-MacBook-Pro.local" time="0.014">
+  <properties/>
+  <testcase name="createUser()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.003"/>
+  <testcase name="createUserInvalidEmailDomain()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.003"/>
+  <testcase name="createUserInvalidEmailDomainIdentifier()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.002"/>
+  <testcase name="createUserInvalidPassword()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.001"/>
+  <testcase name="createUserInvalidUsername()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.001"/>
+  <testcase name="getUsers()" classname="com.bloomtech.userCreation.services.UserServiceTest" time="0.001"/>
+  <system-out><![CDATA[2022-05-04 09:31:44.528  INFO 66597 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bloomtech.userCreation.services.UserServiceTest], using SpringBootContextLoader
+2022-05-04 09:31:44.529  INFO 66597 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.bloomtech.userCreation.services.UserServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-04 09:31:44.535  INFO 66597 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-04 09:31:44.536  INFO 66597 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6040b00b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55f2ebe2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4a08bcff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9cb3d56, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c6e148c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e014f18, org.springframework.test.context.event.EventPublishingTestExecutionListener@2161f163, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71105994, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6dc6e94e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@491b1261, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@67df08c8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@14f0315e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e262617]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.4)
+
+2022-05-04 09:31:44.556  INFO 66597 --- [    Test worker] c.b.u.services.UserServiceTest           : Starting UserServiceTest using Java 16.0.2 on Lambda-School-Jamies-MacBook-Pro.local with PID 66597 (started by jamie in /Users/jamie/dev/ATA_Curriculum_Repos/Unit-1/Sprint 4/UserCreation)
+2022-05-04 09:31:44.557  INFO 66597 --- [    Test worker] c.b.u.services.UserServiceTest           : No active profile set, falling back to 1 default profile: "default"
+2022-05-04 09:31:45.036  INFO 66597 --- [    Test worker] c.b.u.services.UserServiceTest           : Started UserServiceTest in 0.499 seconds (JVM running for 9.529)
+Invalid Email: Email address must include '@' before domain and a domain identifier after a '.'!
+Invalid Email: Email address must include '@' before domain and a domain identifier after a '.'!
+Invalid Password: Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one special character!
+Invalid Username: Username must not contain special characters or spaces!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+com/bloomtech/userCreation/design/CreateUserSDTest.java
+ com.bloomtech.userCreation.design.CreateUserSDTest
+com/bloomtech/userCreation/controllers/UserControllerTest.java
+ com.bloomtech.userCreation.controllers.UserControllerTest
+com/bloomtech/userCreation/design/GetUsersSDTest.java
+ com.bloomtech.userCreation.design.GetUsersSDTest
+com/bloomtech/userCreation/services/UserServiceTest.java
+ com.bloomtech.userCreation.services.UserServiceTest

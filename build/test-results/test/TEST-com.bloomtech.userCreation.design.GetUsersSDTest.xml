@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomtech.userCreation.design.GetUsersSDTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-05-04T16:31:41" hostname="Lambda-School-Jamies-MacBook-Pro.local" time="0.079">
+  <properties/>
+  <testcase name="[1] type=List&lt;User&gt;" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.063"/>
+  <testcase name="[2] type=200 Response" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.001"/>
+  <testcase name="[1] method=getUsersList" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.001"/>
+  <testcase name="[1] type=UserController" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.003"/>
+  <testcase name="[2] type=UserService" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.001"/>
+  <testcase name="[3] type=UserDataRepository" classname="com.bloomtech.userCreation.design.GetUsersSDTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

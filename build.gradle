@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+    id 'com.adarshr.test-logger' version '3.0.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+// for use with the Gradle Java Plugin
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/']
+        }
+        resources {
+            srcDirs = ['src/resources/']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['tst/']
+        }
+        resources {
+            srcDirs = ['tst/resources/']
+        }
+    }
+}
+
+dependencies {
+    //JUnit
+    implementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    //ATATestInfrastructure
+    implementation project('LibrariesAndUtilities:ATACurriculumTestInfrastructure')
+}
+
+test {
+    useJUnitPlatform()
+
+    testlogger {
+        theme 'plain'
+        logLevel 'quiet'
+    }
+
+    testLogging {
+
+        info.events = debug.events
+        info.exceptionFormat = debug.exceptionFormat
+
+        afterSuite { desc, result ->
+            if (!desc.parent) { // will match the outermost suite
+                def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped)"
+                def startItem = '|  ', endItem = '  |'
+                def repeatLength = startItem.length() + output.length() + endItem.length()
+                println('\n' + ('-' * repeatLength) + '\n' + startItem + output + endItem + '\n' + ('-' * repeatLength))
+
+                def scoringPercentage = 10 - result.failedTestCount
+                scoringPercentage = scoringPercentage / 10
+                println("Exit Result for Scoring: " + scoringPercentage)
+            }
+        }
+    }
+}
+
+project.configurations.implementation.setCanBeResolved(true)
+jar {
+    manifest {
+        attributes(
+                "Main-Class": "",
+                "Class-Path": configurations.implementation.collect { it.name }.join(' ')
+        )
+    }
+    dependsOn('dependencies')
+}
