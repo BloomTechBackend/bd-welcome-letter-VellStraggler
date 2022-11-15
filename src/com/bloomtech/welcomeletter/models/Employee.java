@@ -35,7 +35,58 @@ public class Employee {
     }
 
     //TODO: Create Builder Class
+    public static final class Builder {
+        private String firstname;
+        private String lastname;
+        private String phonenumber;
+        private String email;
+        private int salary;
+        private LocalDate startdate;
+        private Role role;
+        private Company company;
 
+        public Builder withFirstname(String name) {
+            firstname = name;
+            return this;
+        }
+        public Builder withLastname(String name) {
+            lastname = name;
+            return this;
+        }
+        public Builder withPhonenumber(String number) {
+            phonenumber = number;
+            return this;
+        }
+        public Builder withStartdate(LocalDate date) {
+            startdate = date;
+            return this;
+        }
+        public Builder withEmail(String email) {
+            this.email = email;
+            return this;
+        }
+        public Builder withSalary(int salary) {
+            this.salary = salary;
+            return this;
+        }
+        public Builder withRole(Role role) {
+            this.role = role;
+            return this;
+        }
+        public Builder withCompany(Company company) {
+            this.company = company;
+            return this;
+        }
+        public Employee build() {
+            if (firstname == null || company == null) {
+                throw new RuntimeException("Employee must have a first name and a company.");
+            }
+            return new Employee(firstname, lastname, phonenumber, email, salary, startdate, role, company);
+        }
+    }
+    public static Builder builder() {
+        return new Builder();
+    }
 
     //Getters
     public String getFirstname() {

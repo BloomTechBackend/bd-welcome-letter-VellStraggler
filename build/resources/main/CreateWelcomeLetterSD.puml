@@ -1,0 +1,10 @@
+@startuml
+
+actor App
+participant EmployeeService
+participant EmployeeRepository
+database Datasource
+participant FormLetterService
+participant FileManager
+
+@enduml
