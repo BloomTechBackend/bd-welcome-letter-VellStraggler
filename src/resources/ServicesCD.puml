@@ -1,0 +1,30 @@
+@startuml
+class EmployeeService{
+  - formLetterService: FormLetterService
+  - employeeRepository: EmployeeRepository
+  + sendFormToEmployee()
+  + getEmployeeById()
+  + sendFormToEmployeeWithId()
+}
+class EmployeeRepository{
+  - datasource: Datasource
+  + findEmployeeById()
+}
+class FormLetterService{
+  - fileManager: FileManager
+  + generateWelcomeLetter()
+}
+class FileManager{
+  + getTextFromFile()
+  + writeTextToFile()
+}
+class Datasource{
+  + companies: ArrayList
+  + employees: ArrayList
+}
+FormLetterService --* EmployeeService
+FormLetterService *-- FileManager
+EmployeeRepository *-- Datasource
+EmployeeService *-- EmployeeRepository
+EmployeeRepository --> Employee
+@end

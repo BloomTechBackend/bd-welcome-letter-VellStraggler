@@ -7,4 +7,26 @@ database Datasource
 participant FormLetterService
 participant FileManager
 
+App -> EmployeeService: Id
+EmployeeService -> EmployeeRepository: sendFormToEmployeeWithId
+EmployeeService -> EmployeeService: getEmployeeById
+EmployeeService -> EmployeeRepository: findEmployeeById
+EmployeeRepository -> Datasource: findEmployeeById
+
+alt Employee not found
+EmployeeRepository <- Datasource: RuntimeException
+end
+
+EmployeeRepository <- Datasource: Employee
+EmployeeRepository -> EmployeeService: Employee
+EmployeeService -> FormLetterService: generateWelcomeLetter
+FormLetterService -> FileManager: getTextFromFile
+FormLetterService <- FileManager: String
+
+alt File not found
+FormLetterService <- FileManager: null
+end
+
+FormLetterService -> FileManager: writeTextToFile
+
 @enduml

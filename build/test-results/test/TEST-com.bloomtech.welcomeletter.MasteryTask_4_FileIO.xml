@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-19T01:52:22" hostname="DESKTOP-K1S8I4E" time="0.056">
+  <properties/>
+  <testcase name="testFileManager_writeToNewFile()" classname="com.bloomtech.welcomeletter.MasteryTask_4_FileIO" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

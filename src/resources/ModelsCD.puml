@@ -1,3 +1,29 @@
 @startuml
+class Employee {
+- id: int
+- firstname: String
+- lastname: String
+- phonenumber: String
+- email: String
+- salary: int
+- startdate: LocalDate
+- role: Role
+- company: Company
 
++ builder(): Builder
+}
+class Company {
+- companyname: String
+- country: String
+- id: int
+
++ builder(): Builder
+}
+enum Role{
+COORDINATOR
+DATA
+ENGINEERING
+}
+Company --o Employee
+Role . Employee
 @enduml
