@@ -1,10 +1,10 @@
-com/bloomtech/welcomeletter/MasteryTask_4_FormLetterService.java
- com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService
+com/bloomtech/welcomeletter/MasteryTask_2_ClassDiagrams.java
+ com.bloomtech.welcomeletter.MasteryTask_2_ClassDiagrams
 com/bloomtech/welcomeletter/MasteryTask_2_SequenceDiagrams.java
  com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams
 com/bloomtech/welcomeletter/MasteryTask_1_BuilderPattern.java
  com.bloomtech.welcomeletter.MasteryTask_1_BuilderPattern
-com/bloomtech/welcomeletter/MasteryTask_2_ClassDiagrams.java
- com.bloomtech.welcomeletter.MasteryTask_2_ClassDiagrams
+com/bloomtech/welcomeletter/MasteryTask_4_FormLetterService.java
+ com.bloomtech.welcomeletter.MasteryTask_4_FormLetterService
 com/bloomtech/welcomeletter/MasteryTask_4_FileIO.java
  com.bloomtech.welcomeletter.MasteryTask_4_FileIO

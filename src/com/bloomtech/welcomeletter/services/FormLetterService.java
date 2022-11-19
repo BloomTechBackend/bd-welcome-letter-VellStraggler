@@ -10,9 +10,14 @@ public class FormLetterService {
 
     public void generateWelcomeLetter(Employee employee) throws IOException {
         //TODO: Get template text from resources
-
+        String textFull = fileManager.getTextFromFile("C:\\Users\\david\\bloomtech\\bd-welcome-letter-VellStraggler\\src\\resources\\LetterTemplate.txt");
         //TODO: Replace []ed text with correct info
-
+        textFull.replaceAll("[company name]",employee.getCompany().getCompanyName());
+        textFull.replaceAll("[fullname]",employee.getFirstname() + " " + employee.getLastname());
+        textFull.replaceAll("[startdate]",employee.getStartdate().toString());
+        textFull.replaceAll("[startingsalary]",employee.getSalary() + "");
+        textFull.replaceAll("[starttime]",employee.getStartdate().atStartOfDay().toString());
         //TODO: Write finalized String to file
+        System.out.println(textFull);
     }
 }

@@ -7,4 +7,17 @@ database Datasource
 participant FormLetterService
 participant FileManager
 
+App -> EmployeeService: Id
+EmployeeService -> EmployeeRepository: sendFormToEmployeeById()
+EmployeeService -> FormLetterService: generateWelcomeLetter()
+FormLetterService -> FileManager: welcomeLetter
+EmployeeRepository -> Datasource: findEmployeeById()
+EmployeeRepository <- Datasource: Employee
+EmployeeRepository -> EmployeeService: Employee
+
+alt IOException
+FormLetterService -> FileManager: null
+end
+
+
 @enduml
