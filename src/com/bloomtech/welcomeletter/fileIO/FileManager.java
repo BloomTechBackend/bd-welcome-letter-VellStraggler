@@ -8,11 +8,11 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileManager {
-    private static final String filePrefix = "src\\resources\\";
-    private static final String outFilePrefix = "src\\resources\\out\\";
+    public static final String filePrefix = "src/resources/";
+    public static final String outFilePrefix = "src/resources/out/";
     public FileManager() {
     }
-    private static String addPrefix(String prefix, String filename) {
+    public static String addPrefix(String prefix, String filename) {
         if (!filename.contains(prefix)) {
             filename = prefix + filename + ".txt";
         }
