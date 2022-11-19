@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" tests="17" skipped="0" failures="0" errors="0" timestamp="2022-11-19T01:42:19" hostname="DESKTOP-K1S8I4E" time="0.249">
+  <properties/>
+  <testcase name="[1] App" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.07"/>
+  <testcase name="[2] EmployeeService" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.003"/>
+  <testcase name="[3] EmployeeRepository" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.004"/>
+  <testcase name="[4] FormLetterService" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.003"/>
+  <testcase name="[5] FileManager" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.005"/>
+  <testcase name="[6] Datasource" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.004"/>
+  <testcase name="[1] null" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.004"/>
+  <testcase name="[2] RuntimeException" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.002"/>
+  <testcase name="[3] findEmployeeById" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.003"/>
+  <testcase name="[4] String" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.005"/>
+  <testcase name="[5] Employee" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.009"/>
+  <testcase name="[1] sendFormToEmployeeWithId" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.004"/>
+  <testcase name="[2] getEmployeeById" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.005"/>
+  <testcase name="[3] findEmployeeById" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.004"/>
+  <testcase name="[4] generateWelcomeLetter" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.002"/>
+  <testcase name="[5] getTextFromFile" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.003"/>
+  <testcase name="[6] writeTextToFile" classname="com.bloomtech.welcomeletter.MasteryTask_2_SequenceDiagrams" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

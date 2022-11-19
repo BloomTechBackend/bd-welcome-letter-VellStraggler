@@ -1,9 +1,0 @@
-Welcome to test company!
-
-Dear Test Employee,
-
-We are all really excited to welcome you to our team! As agreed, your start date will be 2022-08-30 and
-your starting salary is $100000.
-We expect to see you in our offices at [company starttime].
-
-We are looking forward to working with you!
